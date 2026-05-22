@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.pytest_cache/
+*.log
+
+# ML models (too large for GitHub)
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+models/
+
+# Data files (can be large)
+*.csv
+data/
+
+# Environment variables (keep secrets safe!)
+.env
+.env.local
+.env.production
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.local
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude
+.claude/
