@@ -5,7 +5,9 @@ import type {
   UploadResponse,
 } from './types'
 
-const BASE = '/api'
+// In production (Vercel), VITE_API_URL is set to the Railway backend URL
+// In development, Vite proxy handles /api → localhost:8000
+const BASE = import.meta.env.VITE_API_URL || '/api'
 
 async function handleResponse<T>(res: Response): Promise<T> {
   if (!res.ok) {
